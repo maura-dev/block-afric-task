@@ -25,20 +25,26 @@ export default function Home(){
 
 	      		<div className="left">
 	      			<div className="rates">
+
+	      				<div className="rates-item">
+	      					<p><i className="fas fa-wallet"></i></p>
+	      					<p>150.00</p>
+	      					<sub>Balance</sub>
+	      				</div>
 	      				<div className="rates-item">
 	      					<p>AFYA</p>
 	      					<p>143.00</p>
 	      					<sub>Balance</sub>
 	      				</div>
 	      				<div className="rates-item">
-	      					<p>ZAR</p>
-	      					<p>R21.00</p>
-	      					<sub>Equivalent</sub>
+	      					<p>&#8358;</p>
+	      					<p>21.00</p>
+	      					<sub>Balance</sub>
 	      				</div>
 	      			</div>
 
-	      			<div>
-	      				<p style={{marginLeft:"30px"}}>Select Currency:</p>
+	      			<div className="currency-container"><br/>
+	      				<p style={{marginLeft:"30px", fontWeight:"700"}}>Select Currency:</p><br/>
 	      				<div className="currency">
 	      					<select>
 	      						<option value="0.00000001" selected>AFYA</option>
@@ -49,21 +55,26 @@ export default function Home(){
 	      						<option value="49.0935">CLP</option>
 	      						<option value="1.3902">MXN</option>
 	      					</select>&nbsp; 0.00000001</div>
+
+	      				<div className="buttons">
+	      					<Button text="&nbsp;Send&nbsp;"/>
+	      					<Button text="Receive"/>
+	      				</div>
 	      			</div>
 
-	      			<div className="buttons">
-	      				<Button text="&nbsp;Send&nbsp;"/>
-	      				<Button text="Receive"/>
-	      			</div>
+	      			
 	      		</div>
 
 	      		<div className="right">
-	      			<p style={{marginLeft:"30px"}}>Recent Activities</p>
-	      			<ActivityItem image="fas fa-ribbon" text="HIV Blood Draw Test" amount="A100"/><br/>
-	      			<ActivityItem image="fas fa-x-ray" text="TB Radiology XRay" amount="A30"/><br/>
-	      			<ActivityItem image="fas fa-thermometer" text="Blood Pressure Check" amount="A10"/><br/>
-	      			<ActivityItem image="fas fa-thermometer-quarter" text="Temperature check" amount="A20"/><br/>
-	      			<ActivityItem image="fas fa-weight" text="Body weight Check" amount="A10"/>
+	      			<p style={{marginLeft:"30px", fontWeight:"700"}}>Recent Activities</p>
+	      			<ActivityItem date="Date" description="Description" amount="Amount(&#8358;)"/>
+	      			<ActivityItem date="1/1/21" description="Sent" amount="&#8358;100.00"/>
+	      			<ActivityItem date="2/2/21" description="Received" amount="&#8358;200.00"/>
+	      			<ActivityItem date="3/3/21" description="Sent" amount="&#8358;300.00"/>
+	      			<ActivityItem date="4/4/21" description="Received" amount="&#8358;400.00"/>
+	      			<ActivityItem date="5/4/21" description="Sent" amount="&#8358;500.00"/>
+	      			<ActivityItem date="6/4/21" description="Received" amount="&#8358;600.00"/>
+	      			
 
 	      		</div>
 

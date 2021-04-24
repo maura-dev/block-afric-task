@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function ActivityItem({image, text, amount}){
+export default function ActivityItem({date, description, amount}){
 
 	return(
       	<div className="activity-item">
-      		<i className={image}></i>
-        	<p>{text}</p>
+      		<p>{date}</p>
+        	<p>{description}</p>
       		<p>{amount}</p>
       	</div>
 	)
